@@ -1,6 +1,10 @@
+html, body {
+    min-height: 100%;
+}
+
 /* The sidebar menu */
 .sidenav {
-  font-family: 'Ubuntu Mono';font-size: 22px;
+  /* font-family: 'Ubuntu Mono';font-size: 22px; */
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 100px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -10,6 +14,22 @@
   background-color: #222; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  transition: .5s;
+}
+
+/* The sidebar menu */
+.sidenav:hover {
+  /* font-family: 'Ubuntu Mono';font-size: 22px; */
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #222; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  transition: .5s;
 }
 
 /* The navigation menu links */
@@ -19,6 +39,7 @@
   font-size: 25px;
   color: #818181;
   display: block;
+  transition:color 1s ease-in-out;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -45,9 +66,19 @@
 
 #introduction h1 {
     font-family: 'Ubuntu Mono';
-    margin: ;
-    margin-bottom: 5px;
+    margin-right: 30%;
+    margin-bottom: 3px;
     font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #45505b;
+}
+
+#introduction h3 {
+    font-family: 'Ubuntu Mono';
+    margin-right: 30%;
+    margin-top: 0px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 56px;
     color: #45505b;
@@ -62,9 +93,23 @@
     color: #45505b;
 }
 
-/* .center-justification {
-  justify-content: center!important;
-} */
+.center-justification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.left-text-justification {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  min-height: 100vh;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 /* @media screen and (max-height: 450px) {
